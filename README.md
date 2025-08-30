@@ -23,7 +23,7 @@ This project involved the design and execution of a comprehensive series of netw
 
 ## 📜 TABLE OF CONTENTS
 
-
+- [`Packet Analysis with Suricata`](#packet-analysis-with-suricata)
 - [`TCP 3-WAY HANDSHAKE`](#tcp-3-way-handshake)
 - [`DNS TUNNELING`](#dns-tunneling)
 - [`ARP SPOOFING & MAN-IN-THE-MIDDLE ATTACK`](#arp-spoofing--man-in-the-middle-attack)
