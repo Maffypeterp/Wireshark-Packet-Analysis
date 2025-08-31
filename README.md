@@ -13,6 +13,8 @@
 - [`Ubuntu 22.04:`](https://releases.ubuntu.com/jammy/)</br>
   Deployed on two separate virtual machines—one configured as the attacker/client and the other as the server/analyzer.
 
+- [`Suricata 7.0.11:`](https://suricata.io/2025/07/08/suricata-7-0-11-released/)</br>
+  Suricata is a network security tool that inspects traffic in real time to identify and stop attacks..
 ---
 
 ## OBJECTIVE
