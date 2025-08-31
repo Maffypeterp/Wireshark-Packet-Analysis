@@ -1,8 +1,12 @@
 <h1 = align=center>𝚆𝙸𝚁𝙴𝚂𝙷𝙰𝚁𝙺 𝙿𝙰𝙲𝙺𝙴𝚃 𝙰𝙽𝙰𝙻𝚈𝚂𝙸𝚂</h1>
 <p = align=center>
 
+<img width="512" height="388" alt="Image" src="https://github.com/user-attachments/assets/3990ab56-6316-43d6-a4bd-722d40af3fa3" />
 
 </p>
+
+---
+
 ## 🛠️ TECHNOLOGY & PLATFORMS UTILIZED
 
 - [`Wireshark:`](https://www.wireshark.org/download.html)</br>
@@ -153,3 +157,5 @@ Wireshark filtering enables you to isolate specific traffic, helping you analyze
 
 Step 11: Analyzing ICMP Traffic
 Gained an understanding of how ICMP traffic, to test network reachability using ICMP Echo Request and responses (ICMP Echo Reply)
+
+<img width="786" height="525" alt="Image" src="https://github.com/user-attachments/assets/bcfc441f-aa16-4c16-bcfe-10c619c1687f" />
