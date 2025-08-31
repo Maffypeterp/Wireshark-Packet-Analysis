@@ -10,21 +10,21 @@
 ## 🛠️ TECHNOLOGY & PLATFORMS UTILIZED
 
 - [`Wireshark:`](https://www.wireshark.org/download.html)</br>
-  Core tool used for capturing and analyzing network traffic across various protocols.
+   Core tool used for capturing and analyzing network traffic across various protocols.
 
 - [`VirtualBox:`](https://www.virtualbox.org/)</br>
-  Hosted multiple isolated virtual machines for safely simulating real-world networking environments and security attacks.
+   Hosted multiple isolated virtual machines for safely simulating real-world networking environments and security attacks.
 
 - [`Ubuntu 22.04:`](https://releases.ubuntu.com/jammy/)</br>
-  Deployed on two separate virtual machines—one configured as the attacker/client and the other as the server/analyzer.
+   Deployed on two separate virtual machines—one configured as the attacker/client and the other as the server/analyzer.
 
 - [`Suricata 7.0.11:`](https://suricata.io/2025/07/08/suricata-7-0-11-released/)</br>
-  Suricata is a network security tool that inspects traffic in real time to identify and stop attacks..
+   Monitored specific network interfaces in real time to identify and stop attacks..
 ---
 
 ## OBJECTIVE
 
-This project involved the design and execution of a comprehensive series of network security simulations using `Wireshark` in a controlled virtual lab environment. Leveraging `VirtualBox` and multiple `Linux` virtual machines, I captured and analyzed network traffic across a variety of protocols to simulate both normal and malicious behavior. Key scenarios included `TCP handshakes`, `SYN scans`, `DNS tunneling`, `ARP spoofing`, `credential leakage` via HTTP and FTP, `Telnet/SSH` sessions, `TLS/SSL handshakes`, and `DoS` indicators. Each simulation was crafted to mirror real-world attack patterns or defensive monitoring tasks, providing deep insights into packet-level behavior, protocol vulnerabilities, and network-based threat detection techniques. This project demonstrated hands-on proficiency in packet analysis, threat simulation, and network forensic workflows.
+This project involved the design and execution of a comprehensive series of network security simulations using `Wireshark` in a controlled virtual lab environment. Leveraging `VirtualBox` and multiple `Linux` virtual machines, I captured and analyzed network traffic across a variety of protocols to simulate both normal and malicious behavior. Key scenarios included `TCP handshakes`, `SYN scans`, `Telnet/SSH` sessions, and `DoS` indicators. Each simulation was crafted to mirror real-world attack patterns or defensive monitoring tasks, providing deep insights into packet-level behavior, protocol vulnerabilities, and network-based threat detection techniques. This project demonstrated hands-on proficiency in packet analysis, threat simulation, and network forensic workflows.
 
 ---
 
