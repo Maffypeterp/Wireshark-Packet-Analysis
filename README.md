@@ -146,5 +146,9 @@ Step 10: Setting up Wireshark to packet capture on  your network
 
 Wireshark filtering enables you to isolate specific traffic, helping you analyze network data more effectively.
 
+<img width="752" height="303" alt="Image" src="https://github.com/user-attachments/assets/1a455715-94da-426e-b8ce-0091ad5d0d53" />
+
+---
+
 Step 11: Analyzing ICMP Traffic
 Gained an understanding of how ICMP traffic, to test network reachability using ICMP Echo Request and responses (ICMP Echo Reply)
