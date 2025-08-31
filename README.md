@@ -1,6 +1,7 @@
 <h1 = align=center>𝚆𝙸𝚁𝙴𝚂𝙷𝙰𝚁𝙺 𝙿𝙰𝙲𝙺𝙴𝚃 𝙰𝙽𝙰𝙻𝚈𝚂𝙸𝚂</h1>
 <p = align=center>
 
+
 </p>
 ## 🛠️ TECHNOLOGY & PLATFORMS UTILIZED
 
