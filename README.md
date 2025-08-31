@@ -5,7 +5,7 @@
 
 </p>
 
----
+
 
 ## 🛠️ TECHNOLOGY & PLATFORMS UTILIZED
 
@@ -42,8 +42,7 @@ This project involved the design and execution of a comprehensive series of netw
 
 ## DETECTING AND ANALYSING TRAFFIC WITH SURICATA
 
-
-<img width="977" height="595" alt="Image" src="https://github.com/user-attachments/assets/95b746c6-deda-444e-9e1d-9d2b5e068ae7" />
+<img width="597" height="303" alt="Image" src="https://github.com/user-attachments/assets/74c3c280-3d46-4d89-907f-75ed57c23cb6" />
 
 ---
 Step 1. Prepare the Environment, using ` Kali Linux `as the Operating System. Setup Kali Linux on a Virtual Machine using virtualBox.
@@ -107,6 +106,9 @@ sudo nano
 <img width="788" height="530" alt="Image" src="https://github.com/user-attachments/assets/a6e876c2-6fe0-45a5-8c38-c0a70e5bb5ab" />
 
 Set the `default-rule-path` and include `local.rules` in the `rule-files` section.
+
+---
+
 
 Step 6: Apply the changes by restarting Suricata:
 ```bash
