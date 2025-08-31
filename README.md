@@ -68,7 +68,7 @@ Open the local.rule file in nano editor
 sudo nano
 /var/lib/suricata//rules/local.rules
 ```
-<img width="570" height="183" alt="Image" src="https://github.com/user-attachments/assets/b1d44975-0ac3-4bc9-94ef-66ab6c74112a" />
+
 
 
 After adding custom rules, Add the rule to detect ICMP ping requests:
@@ -76,16 +76,22 @@ After adding custom rules, Add the rule to detect ICMP ping requests:
 ```bash
 alert icmp any any -> any any (msg:"ICMP Ping Dectected"; itype:8; sid:1000001; rev:1;)
 ```
+
+<img width="800" height="597" alt="Image" src="https://github.com/user-attachments/assets/51329592-92f1-423a-b8ec-482ce1454581" />
+
+
 ---
 
 
 Step 5: Update Suricata Configuration
 Open the suricata configuration file:
+
 ```bash
 sudo nano
 /etc/suricata/suricata.yaml
 ```
 
+<img width="788" height="530" alt="Image" src="https://github.com/user-attachments/assets/a6e876c2-6fe0-45a5-8c38-c0a70e5bb5ab" />
 
 Set the `default-rule-path` and include `local.rules` in the `rule-files` section.
 
