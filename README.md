@@ -42,49 +42,57 @@ Step 1. Prepare the Environment, using ` Kali Linux `as the Operating System. Se
 Step2. Install Suricata on the Kali Linux Operating System. Open the terminal and update the package list:
 ```bash
 sudo apt update
-
-To inatall Suricata on Kali Linux
+```
+To install Suricata on Kali Linux
 
 ```bash
 sudo apt inastall suricata
+```
 
 Step 3. Update the Suricata rule set:
 ```bash
 sudo suricata-update
+```
 
 Step4: Next, create a custom rule
 Open the local.rule file in nano editor
 ```bash
 sudo nano
 /var/lib/suricata//rules/local.rules
-
+```
 After adding custom rules, Add the rule to detect ICMP ping requests:
 
 ```bash
 alert icmp any any -> any any (msg:"ICMP Ping Dectected"; itype:8; sid:1000001; rev:1;)
-
+```
 
 Step 5: Update Suricata Configuration
 Open the suricata configuration file:
 ```bash
 sudo nano
 /etc/suricata/suricata.yaml
+```
 
 Set the `default-rule-path` and include `local.rules` in the `rule-files` section.
 
 Step 6: Apply the changes by restarting Suricata:
 ```bash
 sudo systemctl restart suricata
+```
 
 Step 7: Run suricata to verify rules are loaded:
 ```bash
 sudo suricata -c /etc/suricata/suricata.yaml -i eth0 -v
+```
 
 Step 8:Generate traffic to trigger the rule:
 ```bash
 ping -c 4 8.8.8.8
+```
+
 Step 9:Verify the detection in the Suricata logs
 ```bash
 sudo cat /var/log/suricata/eve.json | grep "ICMP Ping Detected"
+```
 
 Step 10: Using Wireshark tocapture and filter ICMP traffic
