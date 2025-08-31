@@ -149,7 +149,7 @@ sudo cat /var/log/suricata/eve.json | grep "ICMP Ping Detected"
 
 ## Network Traffic Capture with Wireshark
 
-### Step 10: Setting up Wireshark to packet capture on  your network
+###  Step 10: 🖥️ Setting up Wireshark to packet capture on  your network
 
 <img width="742" height="357" alt="Image" src="https://github.com/user-attachments/assets/c32395e1-a689-440c-9015-a332ddabbda9" />
 
