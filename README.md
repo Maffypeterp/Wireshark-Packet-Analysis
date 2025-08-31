@@ -37,6 +37,10 @@ This project involved the design and execution of a comprehensive series of netw
 
 ## DETECTING AND ANALYSING TRAFFIC WITH SURICATA
 
+
+<img width="977" height="595" alt="Image" src="https://github.com/user-attachments/assets/95b746c6-deda-444e-9e1d-9d2b5e068ae7" />
+
+---
 Step 1. Prepare the Environment, using ` Kali Linux `as the Operating System. Setup Kali Linux on a Virtual Machine using virtualBox.
 
 <img width="640" height="562" alt="Image" src="https://github.com/user-attachments/assets/31055b3a-bd46-4beb-9005-e10b2abb4b86" />
@@ -135,6 +139,12 @@ sudo cat /var/log/suricata/eve.json | grep "ICMP Ping Detected"
 
 ## Network Traffic Capture with Wireshark
 
-Step 10: Using Wireshark to capture and filter ICMP traffic
+Step 10: Setting up Wireshark to packet capture on  your network
 
 <img width="742" height="357" alt="Image" src="https://github.com/user-attachments/assets/c32395e1-a689-440c-9015-a332ddabbda9" />
+
+
+Wireshark filtering enables you to isolate specific traffic, helping you analyze network data more effectively.
+
+Step 11: Analyzing ICMP Traffic
+Gained an understanding of how ICMP traffic, to test network reachability using ICMP Echo Request and responses (ICMP Echo Reply)
