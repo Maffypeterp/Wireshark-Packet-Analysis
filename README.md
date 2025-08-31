@@ -39,13 +39,15 @@ This project involved the design and execution of a comprehensive series of netw
 
 Step 1. Prepare the Environment, using ` Kali Linux `as the Operating System. Setup Kali Linux on a Virtual Machine using virtualBox.
 
+<img width="640" height="562" alt="Image" src="https://github.com/user-attachments/assets/31055b3a-bd46-4beb-9005-e10b2abb4b86" />
+
 ---
 
 Step2. Install Suricata on the Kali Linux Operating System. Open the terminal and update the package list:
 ```bash
 sudo apt update
 ```
-To install Suricata on Kali Linux
+To install and configure `Suricata `on `Kali Linux`, to act as an Intrusion Detection System
 
 ```bash
 sudo apt install suricata
@@ -63,7 +65,8 @@ sudo suricata-update
 ---
 
 Step4: Next, create a custom rule
-Open the local.rule file in nano editor
+Open the local.rule file in GNU nano editor
+
 ```bash
 sudo nano
 /var/lib/suricata//rules/local.rules
@@ -79,6 +82,7 @@ alert icmp any any -> any any (msg:"ICMP Ping Dectected"; itype:8; sid:1000001; 
 
 <img width="800" height="597" alt="Image" src="https://github.com/user-attachments/assets/51329592-92f1-423a-b8ec-482ce1454581" />
 
+Generate an alert on ICMP from any source IP and Port to any destination IP and Port. Alert message,` "ICMP Ping Detected"`. Type 8 responds to an ICMP type request which is actually used in ping operations. SID is the unique identifier of the signature and rev 1 indicates the revision number for that rule.This is actually format used for snort signatures which is what suricata uses to generate alerts based off snort rules listed within suricata.
 
 ---
 
@@ -128,6 +132,6 @@ sudo cat /var/log/suricata/eve.json | grep "ICMP Ping Detected"
 ---
 
 
-Step 10: Using Wireshark tocapture and filter ICMP traffic
+Step 10: Using Wireshark to capture and filter ICMP traffic
 
 <img width="742" height="357" alt="Image" src="https://github.com/user-attachments/assets/c32395e1-a689-440c-9015-a332ddabbda9" />
