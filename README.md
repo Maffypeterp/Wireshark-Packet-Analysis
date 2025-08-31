@@ -69,7 +69,7 @@ sudo nano
 /var/lib/suricata//rules/local.rules
 ```
 
-
+<img width="545" height="67" alt="Image" src="https://github.com/user-attachments/assets/fd208556-88ac-4e13-8bca-352a38231d86" />
 
 After adding custom rules, Add the rule to detect ICMP ping requests:
 
