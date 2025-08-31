@@ -39,6 +39,8 @@ This project involved the design and execution of a comprehensive series of netw
 
 Step 1. Prepare the Environment, using ` Kali Linux `as the Operating System. Setup Kali Linux on a Virtual Machine using virtualBox.
 
+---
+
 Step2. Install Suricata on the Kali Linux Operating System. Open the terminal and update the package list:
 ```bash
 sudo apt update
@@ -50,6 +52,7 @@ sudo apt install suricata
 ```
 <img width="606" height="230" alt="Image" src="https://github.com/user-attachments/assets/f0152a07-e95e-4ea5-9682-e66d987cf703" />
 
+---
 
 Step 3. Update the Suricata rule set:
 ```bash
@@ -57,6 +60,7 @@ sudo suricata-update
 ```
 <img width="797" height="562" alt="Image" src="https://github.com/user-attachments/assets/c4c4aca3-0a36-4927-9bea-db6aeb08cbf4" />
 
+---
 
 Step4: Next, create a custom rule
 Open the local.rule file in nano editor
@@ -72,6 +76,8 @@ After adding custom rules, Add the rule to detect ICMP ping requests:
 ```bash
 alert icmp any any -> any any (msg:"ICMP Ping Dectected"; itype:8; sid:1000001; rev:1;)
 ```
+---
+
 
 Step 5: Update Suricata Configuration
 Open the suricata configuration file:
@@ -87,6 +93,7 @@ Step 6: Apply the changes by restarting Suricata:
 ```bash
 sudo systemctl restart suricata
 ```
+---
 
 Step 7: Run suricata to verify rules are loaded:
 ```bash
@@ -94,7 +101,7 @@ sudo suricata -c /etc/suricata/suricata.yaml -i eth0 -v
 ```
 <img width="628" height="402" alt="Image" src="https://github.com/user-attachments/assets/33ce29c4-def0-47df-827a-024327bbd0cb" />
 
-
+---
 
 Step 8:Generate traffic to trigger the rule:
 ```bash
@@ -103,10 +110,17 @@ ping -c 4 8.8.8.8
 <img width="630" height="71" alt="Image" src="https://github.com/user-attachments/assets/027117f1-731f-490a-8f44-369e189c096c" />
 <img width="562" height="193" alt="Image" src="https://github.com/user-attachments/assets/96405b7a-a498-41f9-8abb-53d78605fbcb" />
 
+---
+
+
 Step 9:Verify the detection in the Suricata logs
 ```bash
 sudo cat /var/log/suricata/eve.json | grep "ICMP Ping Detected"
 ```
+<img width="637" height="427" alt="Image" src="https://github.com/user-attachments/assets/21297b1b-29b2-4665-9735-711e70050fef" />
+
+---
+
 
 Step 10: Using Wireshark tocapture and filter ICMP traffic
 
