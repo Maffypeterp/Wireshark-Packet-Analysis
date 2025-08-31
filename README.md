@@ -46,13 +46,17 @@ sudo apt update
 To install Suricata on Kali Linux
 
 ```bash
-sudo apt inastall suricata
+sudo apt install suricata
 ```
+<img width="606" height="230" alt="Image" src="https://github.com/user-attachments/assets/f0152a07-e95e-4ea5-9682-e66d987cf703" />
+
 
 Step 3. Update the Suricata rule set:
 ```bash
 sudo suricata-update
 ```
+<img width="797" height="562" alt="Image" src="https://github.com/user-attachments/assets/c4c4aca3-0a36-4927-9bea-db6aeb08cbf4" />
+
 
 Step4: Next, create a custom rule
 Open the local.rule file in nano editor
@@ -60,6 +64,9 @@ Open the local.rule file in nano editor
 sudo nano
 /var/lib/suricata//rules/local.rules
 ```
+<img width="570" height="183" alt="Image" src="https://github.com/user-attachments/assets/b1d44975-0ac3-4bc9-94ef-66ab6c74112a" />
+
+
 After adding custom rules, Add the rule to detect ICMP ping requests:
 
 ```bash
@@ -73,6 +80,7 @@ sudo nano
 /etc/suricata/suricata.yaml
 ```
 
+
 Set the `default-rule-path` and include `local.rules` in the `rule-files` section.
 
 Step 6: Apply the changes by restarting Suricata:
@@ -84,11 +92,16 @@ Step 7: Run suricata to verify rules are loaded:
 ```bash
 sudo suricata -c /etc/suricata/suricata.yaml -i eth0 -v
 ```
+<img width="628" height="402" alt="Image" src="https://github.com/user-attachments/assets/33ce29c4-def0-47df-827a-024327bbd0cb" />
+
+
 
 Step 8:Generate traffic to trigger the rule:
 ```bash
 ping -c 4 8.8.8.8
 ```
+<img width="630" height="71" alt="Image" src="https://github.com/user-attachments/assets/027117f1-731f-490a-8f44-369e189c096c" />
+<img width="562" height="193" alt="Image" src="https://github.com/user-attachments/assets/96405b7a-a498-41f9-8abb-53d78605fbcb" />
 
 Step 9:Verify the detection in the Suricata logs
 ```bash
@@ -96,3 +109,5 @@ sudo cat /var/log/suricata/eve.json | grep "ICMP Ping Detected"
 ```
 
 Step 10: Using Wireshark tocapture and filter ICMP traffic
+
+<img width="742" height="357" alt="Image" src="https://github.com/user-attachments/assets/c32395e1-a689-440c-9015-a332ddabbda9" />
