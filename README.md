@@ -111,13 +111,15 @@ sudo suricata -c /etc/suricata/suricata.yaml -i eth0 -v
 ```
 <img width="628" height="402" alt="Image" src="https://github.com/user-attachments/assets/33ce29c4-def0-47df-827a-024327bbd0cb" />
 
+<img width="630" height="71" alt="Image" src="https://github.com/user-attachments/assets/027117f1-731f-490a-8f44-369e189c096c" />
+
 ---
 
 Step 8:Generate traffic to trigger the rule:
 ```bash
 ping -c 4 8.8.8.8
 ```
-<img width="630" height="71" alt="Image" src="https://github.com/user-attachments/assets/027117f1-731f-490a-8f44-369e189c096c" />
+
 <img width="562" height="193" alt="Image" src="https://github.com/user-attachments/assets/96405b7a-a498-41f9-8abb-53d78605fbcb" />
 
 ---
@@ -131,6 +133,7 @@ sudo cat /var/log/suricata/eve.json | grep "ICMP Ping Detected"
 
 ---
 
+## Network Traffic Capture with Wireshark
 
 Step 10: Using Wireshark to capture and filter ICMP traffic
 
